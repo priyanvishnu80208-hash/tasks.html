@@ -1,0 +1,1002 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MARVEL WEBSITE</title>
+    <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <STYLE>
+        *{
+            margin: 0;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+       body {
+    margin: 0;
+    min-height: 100vh;
+    background-image: url("https://i.pinimg.com/originals/d5/3b/f8/d53bf8c7d83a0c585215bb3f198c95c2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+          .navbar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+             background-attachment: fixed;
+          }
+       
+        a{
+            text-decoration: none;
+            padding-left: 50px;
+            display: inline-block;
+            color: aliceblue;
+           
+        }
+        .arc{
+            list-style: none;
+            display: flex;
+            gap: 50px;
+        }
+        .arc li{
+            display: inline;
+        }
+        .arc a{
+            color: yellow;
+            text-decoration: none;
+            font-size: 20px;
+            transition: color 0.3s e;
+        }
+        .arc a:hover{
+            color: red;
+        }
+        .banner{
+             display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px 40px;
+            margin-top: 200px;
+            
+        }
+        .lok{
+            font-size: 40px;
+        }
+        .par{
+          list-style: none;
+            display: flex;
+            gap: 50px;
+           
+        }
+        .par li{
+            display: inline;
+        }
+        .par img{
+border-radius: 40px;
+        }
+        strong{
+            font-size: 30px;
+        }
+        span{
+            color: red;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        img{
+            color: yellow;
+            text-decoration: none;
+            font-size: 20px;
+            transition: color 0.3s ease;
+           
+        }
+        .aq{
+            padding-top: 300px;
+        }
+        
+        .card-section {
+    
+    padding: 30px;
+    padding-top: 300px;
+    width: 100%;
+    margin-bottom: 1OOPX;
+   
+}
+
+.card-slider{
+    display: flex;
+    gap: 20px;
+    width: max-content;
+    animation: slide 19s linear infinite;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.card {
+    width: 250px;
+    background: white;
+    border-radius: 30px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 2px 8px gray;
+    transition: 0.2s;
+    flex-shrink: 0;
+}
+.card:active{
+    transform: scale(0.95);
+}
+
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+@keyframes slide{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-50%);
+    }
+}
+
+.card h3 {
+    margin: 8px 0;
+}
+
+.card p {
+    font-size: 12px;
+    padding: 0 10px;
+}
+
+.card button {
+    background: #2196f3;
+    color: white;
+    border: none;
+    padding: 7px 12px;
+    border-radius: 5px;
+    margin-bottom: 12px;
+}
+.card-section:hover{
+    animation-play-state:paused ;
+}
+
+
+.testimonials {
+    padding: 80px 30px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.testimonials h2 {
+    font-size: 40px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.testimonials > p {
+    color: white;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.testimonial-line {
+    width: 120px;
+    height: 5px;
+    background: gold;
+    margin: 0 auto 40px;
+}
+
+.testimonial-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.testimonial-card {
+    width: 280px;
+    min-height: 360px;
+    background: white;
+    border-radius: 10px;
+    padding: 25px 20px;
+    text-align: center;
+    box-shadow: 0 3px 10px gray;
+    transition: 0.3s;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-10px);
+}
+
+.testimonial-card img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.testimonial-card h3 {
+    color: #222;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.testimonial-card h4 {
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.stars {
+    color: #d99a00;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.testimonial-card p {
+    color: #333;
+    font-size: 14px;
+    line-height: 1.6;
+}
+/* REGISTER FORM */
+
+.register-section {
+    min-height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 20px;
+}
+
+.register-box {
+    width: 550px;
+    background: #22313b;
+    padding: 40px 30px;
+    border-radius: 30px;
+    box-shadow: 0 5px 20px black;
+}
+
+.register-box h2 {
+    text-align: center;
+    color: #20c997;
+    font-size: 45px;
+    margin-bottom: 25px;
+}
+
+.register-box > p {
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+/* First name + Last name */
+
+.name-row {
+    display: flex;
+    gap: 10px;
+}
+
+.name-row input {
+    width: 50%;
+}
+
+/* Input boxes */
+
+.register-box input {
+    height: 80px;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    padding: 0 18px;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+/* Email */
+
+.register-box > input {
+    width: 100%;
+}
+
+/* Password */
+
+.password-box {
+    position: relative;
+}
+
+.password-box input {
+    width: 100%;
+}
+
+.password-box i {
+    position: absolute;
+    right: 20px;
+    top: 25px;
+    font-size: 22px;
+    color: #555;
+    cursor: pointer;
+}
+
+/* Submit button */
+
+.register-btn {
+    width: 100%;
+    height: 70px;
+    border: none;
+    border-radius: 15px;
+    background: #20c997;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.register-btn:hover {
+    background: #15a87d;
+}
+
+/* Sign in */
+
+.signin {
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.signin a {
+    color: #20c997;
+    padding-left: 5px;
+}
+
+.signin a:hover {
+    color: white;
+}
+/* FOOTER */
+
+.footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding-top: 45px;
+    margin-top: 50px;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 35px;
+}
+
+.footer-social a {
+    width: 55px;
+    height: 55px;
+    padding: 0;
+    background: white;
+    color: #111;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    transition: 0.3s;
+}
+
+.footer-social a:hover {
+    background: red;
+    color: white;
+    transform: translateY(-5px);
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 45px;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 35px;
+}
+
+.footer-links a {
+    color: white;
+    padding: 0;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: red;
+}
+
+.footer-bottom {
+    background: black;
+    padding: 20px;
+    font-size: 16px;
+    color: white;
+}
+/* RESPONSIVE */
+
+@media (max-width: 600px) {
+
+    .navbar {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .logo h1 {
+        font-size: 30px !important;
+        padding: 15px 40px !important;
+    }
+
+    .arc {
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .arc a {
+        font-size: 14px;
+        padding-left: 5px;
+    }
+
+    .banner {
+        flex-direction: column;
+        margin-top: 50px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .lok {
+        font-size: 22px;
+    }
+
+    .lok strong {
+        font-size: 24px;
+    }
+
+    .lok button {
+        width: 140px !important;
+        height: 50px !important;
+    }
+
+    .par {
+        margin-top: 30px;
+        padding: 0;
+    }
+
+    .par img {
+        width: 220px;
+        height: 220px;
+        object-fit: cover;
+    }
+
+    .aq {
+        padding-top: 80px;
+    }
+
+    .aq h4 {
+        font-size: 28px !important;
+    }
+
+    .aq strong {
+        font-size: 24px !important;
+    }
+
+    .card-section {
+        padding: 50px 10px;
+        overflow: hidden;
+    }
+
+    .card {
+        width: 200px;
+    }
+
+    .card img {
+        height: 180px;
+    }
+     .testimonials {
+        padding: 50px 15px;
+    }
+
+    .testimonials h2 {
+        font-size: 30px;
+    }
+
+    .testimonial-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonial-card {
+        width: 90%;
+        max-width: 300px;
+    }
+     .register-section {
+        padding: 50px 15px;
+    }
+
+    .register-box {
+        width: 100%;
+        padding: 30px 15px;
+    }
+
+    .register-box h2 {
+        font-size: 35px;
+    }
+
+    .register-box > p {
+        font-size: 16px;
+    }
+
+    .name-row {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .name-row input {
+        width: 100%;
+    }
+
+    .register-box input {
+        height: 65px;
+        font-size: 17px;
+    }
+
+    .register-btn {
+        height: 60px;
+        font-size: 22px;
+    }
+
+}
+
+        
+        
+        
+
+         
+
+           
+          
+            
+        
+        
+        
+       
+    </STYLE>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+    <h1 style="background-color: red;color: aliceblue ;display:inline-block;width: fit-content;margin: 20px auto;font-size: 40px; padding: 25px 70px; text-align: center;" >MARVEL</h1>
+</div>
+   <ul class = "arc">
+      <li><a href ="">HOME</a></li>  
+      <li><a href ="">FEATURES</a></li>  
+      <li><a href ="">SKILLS</a></li>  
+      
+       <li><a href ="">CONTACT</a></li> 
+   </ul>
+  </nav>
+  </header>
+  
+   <br>
+   <section class="banner">
+   
+   <div class="lok">
+   <h4>WELCOME TO MY WORLD</h4>
+  
+   
+    <strong>HI,I am <SPAN>VISHNU PRIYAN</SPAN> a Developer</strong>
+    <p> I Have Create A Marvel Website With HTML and CSS</p>
+
+
+
+    <button type="button" style="width: 200px; height: 60px; padding: 15px 30px;background-color: red; color: yellow;">Sign-in</button>
+    <button type="menu"style="width: 200px; height: 60px; padding: 15px 30px; background-color: red; color: yellow;">Sign-up</button><BR><BR>
+    <i class="fa-brands fa-linkedin"></i>
+    <i class="fa-brands fa-instagram"></i>
+    <i class="fa-brands fa-facebook"></i>
+    <i class="fa-brands fa-facebook-messenger"></i>
+    
+   </div>
+   <ul class="par">
+   <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYLmnNJYXvWEtivJzpVU1lsuLvPqOTJBK_zY9fCzKYLuM-bPS8bkquYIl4&s=10" height="300px" width="300px"></li>
+   </ul>
+   </section>
+   <br><br>
+   
+  <center>
+    <div class="aq">
+    <H4 style=" Font-size: 40px;color: red;">"MARVEL CHARACTERS</H4>
+    <strong style="font-size: 40px;color: aliceblue;">WITH THIER TECHNOLOGIES"</strong>
+   
+</center>
+
+   <section class="card-section">
+    
+   
+    <div class="card-slider">
+    
+    <div class="card card1">
+        <img src="https://images3.alphacoders.com/134/1341704.jpeg">
+        <h3>"Loki Use HTML</h3>
+        <p>Loki Using HTML TO Built Universe</p>
+        <button>View More</button>
+    </div>
+    <div class="card card2">
+         <img src="https://tse3.mm.bing.net/th/id/OIP.HfVm-Pc71Q4vy-GVkhlWOwHaEM?r=0&pid=Api&h=220&P=0">
+        <h3>"Iron Man With CSS</h3>
+        <p>Tony Stark Using CSS TO Modify His IronSuit</p>
+        <button>View More</button>
+    </div>
+    <div class="card card3">
+         <img src="https://tse1.mm.bing.net/th/id/OIP.IgOrsYXiuU-5jB7tQtjrNgHaKe?r=0&pid=Api&h=220&P=0">
+        <h3>"Doctor Strange With JavaScript"</h3>
+        <p>"Strange Using JS to Learn Magic</p>
+        <button>View More</button>
+    </div>
+    <div class="card card4">
+         <img src="https://tse4.mm.bing.net/th/id/OIP.ZDSB5qCMZ3vCMcRX5jD_lQHaHR?r=0&pid=Api&h=220&P=0">
+        <h3>"Doctor Doom With FullStack"</h3>
+        <p>Doctor Doom Using FullStack To Re-Built The Multiverse</p>
+        <button>View More</button>
+    </div>
+    <div class="card card5">
+        <img src="https://wallpapercave.com/wp/XdubWX1.jpg">
+        <h3>"Hulk With SQL"</h3>
+        <p>Hulk Using SQL Query To Increase GamaRadiation</p>
+        <button>View More</button>
+    </div>
+    <div class="card card6">
+        <img src="https://tse4.mm.bing.net/th/id/OIP.lzOXg38u429QaTVfT7qX4gHaEK?r=0&pid=Api&h=220&P=0">
+        <h3>"Black Panther With ReactJS"</h3>
+        <p>Black Panther Using ReactJs To Develop Wakhanda</p>
+        <button>View More</button>
+    </div>
+     <div class="card card1">
+        <img src="https://images3.alphacoders.com/134/1341704.jpeg">
+        <h3>"Loki Use HTML</h3>
+        <p>Loki Using HTML TO Built Universe</p>
+        <button>View More</button>
+    </div>
+    <div class="card card2">
+         <img src="https://tse3.mm.bing.net/th/id/OIP.HfVm-Pc71Q4vy-GVkhlWOwHaEM?r=0&pid=Api&h=220&P=0">
+        <h3>"Iron Man With CSS</h3>
+        <p>Tony Stark Using CSS TO Modify His IronSuit</p>
+        <button>View More</button>
+    </div>
+    <div class="card card3">
+         <img src="https://tse1.mm.bing.net/th/id/OIP.IgOrsYXiuU-5jB7tQtjrNgHaKe?r=0&pid=Api&h=220&P=0">
+        <h3>"Doctor Strange With JavaScript"</h3>
+        <p>"Strange Using JS to Learn Magic</p>
+        <button>View More</button>
+    </div>
+    <div class="card card4">
+         <img src="https://tse4.mm.bing.net/th/id/OIP.ZDSB5qCMZ3vCMcRX5jD_lQHaHR?r=0&pid=Api&h=220&P=0">
+        <h3>"Doctor Doom With FullStack"</h3>
+        <p>Doctor Doom Using FullStack To Re-Built The Multiverse</p>
+        <button>View More</button>
+    </div>
+    <div class="card card5">
+        <img src="https://wallpapercave.com/wp/XdubWX1.jpg">
+        <h3>"Hulk With SQL"</h3>
+        <p>Hulk Using SQL Query To Increase GamaRadiation</p>
+        <button>View More</button>
+    </div>
+    <div class="card card6">
+        <img src="https://tse4.mm.bing.net/th/id/OIP.lzOXg38u429QaTVfT7qX4gHaEK?r=0&pid=Api&h=220&P=0">
+        <h3>"Black Panther With ReactJS"</h3>
+        <p>Black Panther Using ReactJs To Develop Wakhanda</p>
+        <button>View More</button>
+    </div>
+    </div>
+    
+<br>
+     <div class="card-slider">
+   
+    <div class="card card1">
+        <img src="https://wallpaperaccess.com/full/55591.jpg">
+        <h3>"Captain America Use HTML5</h3>
+        <p>Captain America Using HTML5 TO Built Power</p>
+        <button>View More</button>
+    </div>
+    <div class="card card2">
+         <img src="https://images.hdqwalls.com/download/thor-in-avengers-age-of-ultron-5k-ck-1280x1024.jpg">
+        <h3>"Thor With ReactJs</h3>
+        <p>Thor Using ReactJS TO Modify His Asgard</p>
+        <button>View More</button>
+    </div>
+    <div class="card card3">
+         <img src="https://tse3.mm.bing.net/th/id/OIP.mJgq0pRDaBoOQtnj312-tgHaEK?r=0&pid=Api&h=220&P=0">
+        <h3>"War Machine With Claude"</h3>
+        <p>"War Machine Using Claude to Learn Operate Guns</p>
+        <button>View More</button>
+    </div>
+    <div class="card card4">
+         <img src="https://images.hdqwalls.com/download/marvels-avengers-spiderman-4k-5w-1360x768.jpg">
+        <h3>"Spider Man With AWS"</h3>
+        <p> Spider Man Using AWS To Gain More Skills</p>
+        <button>View More</button>
+        
+    </div>
+    <div class="card card5">
+         <img src="https://wallpapercave.com/wp/wp4295131.jpg">
+        <h3>"Thanos With AI"</h3>
+        <p> Thanos Using AI To Built The Universe</p>
+        <button>View More</button>
+        
+    </div>
+    <div class="card card6">
+         <img src="https://tse2.mm.bing.net/th/id/OIP.HDXmjJzhhXG8otyIqZStHgHaEK?r=0&pid=Api&h=220&P=0">
+        <h3>"Wolverine With Machine Learning"</h3>
+        <p>Wolverine Using Machine Learning To Save His Universe</p>
+        <button>View More</button>
+        
+    </div>
+     <div class="card card1">
+        <img src="https://wallpaperaccess.com/full/55591.jpg">
+        <h3>"Captain America Use HTML5</h3>
+        <p>Captain America Using HTML5 TO Built Power</p>
+        <button>View More</button>
+    </div>
+    <div class="card card2">
+         <img src="https://images.hdqwalls.com/download/thor-in-avengers-age-of-ultron-5k-ck-1280x1024.jpg">
+        <h3>"Thor With ReactJs</h3>
+        <p>Thor Using ReactJS TO Modify His Asgard</p>
+        <button>View More</button>
+    </div>
+    <div class="card card3">
+         <img src="https://tse3.mm.bing.net/th/id/OIP.mJgq0pRDaBoOQtnj312-tgHaEK?r=0&pid=Api&h=220&P=0">
+        <h3>"War Machine With Claude"</h3>
+        <p>"War Machine Using Claude to Learn Operate Guns</p>
+        <button>View More</button>
+    </div>
+    <div class="card card4">
+         <img src="https://images.hdqwalls.com/download/marvels-avengers-spiderman-4k-5w-1360x768.jpg">
+        <h3>"Spider Man With AWS"</h3>
+        <p> Spider Man Using AWS To Gain More Skills</p>
+        <button>View More</button>
+        
+    </div>
+    <div class="card card5">
+         <img src="https://wallpapercave.com/wp/wp4295131.jpg">
+        <h3>"Thanos With AI"</h3>
+        <p> Thanos Using AI To Built The Universe</p>
+        <button>View More</button>
+        
+    </div>
+    <div class="card card6">
+         <img src="https://tse2.mm.bing.net/th/id/OIP.HDXmjJzhhXG8otyIqZStHgHaEK?r=0&pid=Api&h=220&P=0">
+        <h3>"Wolverine With Machine Learning"</h3>
+        <p>Wolverine Using Machine Learning To Save His Universe</p>
+        <button>View More</button>
+        
+    </div>
+    </div>
+  </section>
+ 
+
+<section class="testimonials">
+
+    <h2>Testimonials</h2>
+
+    <p>
+        What our visitors say about our Marvel Website
+    </p>
+
+    <div class="testimonial-line"></div>
+
+
+    <div class="testimonial-container">
+
+        <!-- TESTIMONIAL 1 -->
+
+        <div class="testimonial-card">
+
+            <img src="https://people.com/thmb/RUDvvWeUc0KoOzcN7a0VZtrcTDI=/4000x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(777x471:779x473)/Chris-Evans-Wedding-Band-101423-01-8ab8e8e451ba45aebcb3bbf716bb320f.jpg">
+
+            <h3>Steve Rogger</h3>
+
+            <h4>The First Avenger</h4>
+
+            <div class="stars">
+                ★★★★★
+            </div>
+
+            <p>
+                This Marvel website is amazing.
+                The design and technologies are
+                explained in a very interesting way.
+            </p>
+
+        </div>
+
+
+        
+
+        <div class="testimonial-card">
+
+            <img src="https://i.pinimg.com/originals/d7/d9/03/d7d903117294be5418dc9d4ac8ee7f7d.jpg">
+
+            <h3>Tony Stark</h3>
+
+            <h4>Founder Of Stark Industries</h4>
+
+            <div class="stars">
+                ★★★☆☆
+            </div>
+
+            <p>
+                I really enjoyed exploring the
+                Marvel characters and their connection
+                with modern web technologies.
+            </p>
+
+        </div>
+
+
+       
+
+        <div class="testimonial-card">
+
+            <img src="https://i.pinimg.com/originals/fd/b0/ad/fdb0ad2ae39d6784a9f1b823a4a6596c.jpg">
+
+            <h3>Dr.Bruce Banner</h3>
+
+            <h4>Expert Of Gamma Science</h4>
+
+            <div class="stars">
+                ★★★★☆
+            </div>
+
+            <p>
+                A creative portfolio with a nice
+                Marvel theme. The cards and animations
+                make the website attractive.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+</section>
+
+
+
+
+<section class="register-section">
+
+    <div class="register-box">
+
+        <h2>Register</h2>
+
+        <p>Signup now and get full access to our app.</p>
+
+
+        <div class="name-row">
+
+            <input type="text" placeholder="Firstname">
+
+            <input type="text" placeholder="Lastname">
+
+        </div>
+
+
+        <input type="email" placeholder="Email">
+
+
+        <div class="password-box">
+
+            <input type="password" id="password"
+                   placeholder="Password">
+
+            <i class="fa-regular fa-eye-slash"
+               onclick="showPassword('password', this)"></i>
+
+        </div>
+
+
+        <div class="password-box">
+
+            <input type="password" id="confirmPassword"
+                   placeholder="Confirm password">
+
+            <i class="fa-regular fa-eye-slash"
+               onclick="showPassword('confirmPassword', this)"></i>
+
+        </div>
+
+
+        <button class="register-btn">
+            Submit
+        </button>
+
+
+        <div class="signin">
+            Already have an account ?
+            <a href="">Signin</a>
+        </div>
+
+    </div>
+
+</section>
+   
+
+
+<footer class="footer">
+
+   
+
+    <div class="footer-social">
+
+        <a href="#">
+            <i class="fa-brands fa-facebook-f"></i>
+        </a>
+
+        <a href="#">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+
+        <a href="#">
+            <i class="fa-brands fa-twitter"></i>
+        </a>
+
+        <a href="#">
+            <i class="fa-brands fa-google-plus-g"></i>
+        </a>
+
+        <a href="#">
+            <i class="fa-brands fa-youtube"></i>
+        </a>
+
+    </div>
+
+
+   
+
+    <ul class="footer-links">
+
+        <li>
+            <a href="#">Home</a>
+        </li>
+
+        <li>
+            <a href="#">News</a>
+        </li>
+
+        <li>
+            <a href="#">About</a>
+        </li>
+
+        <li>
+            <a href="#">Contact Us</a>
+        </li>
+
+        <li>
+            <a href="#">Our Team</a>
+        </li>
+
+    </ul>
+
+
+    
+
+    <div class="footer-bottom">
+
+        Copyright ©2026; Designed by <strong>VISHNU PRIYAN</strong>
+
+    </div>
+
+</footer>
+
+
+   
+    
+</body>
+</html>
